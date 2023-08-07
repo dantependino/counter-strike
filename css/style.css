@@ -341,7 +341,7 @@ footer ul li {
 
 
 
-/* @media screen and (min-width:1000px) {
+@media screen and (max-width:1000px) {
 
     nav, nav ul li {
         flex-direction: column ;
@@ -437,7 +437,7 @@ footer ul li {
         justify-content: center;
     }
 
-}         */
+}        
 
 
 
