@@ -39,6 +39,7 @@ nav ul li {
     display: inline-flex;
 }
 .nav-link{
+    display: inline-flex;
     color: antiquewhite;
     text-decoration: none;
     text-align: center;
