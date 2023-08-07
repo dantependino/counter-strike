@@ -39,7 +39,6 @@ nav ul li {
     display: inline-flex;
 }
 .nav-link{
-    display: inline-flex;
     color: antiquewhite;
     text-decoration: none;
     text-align: center;
@@ -345,27 +344,23 @@ footer ul li {
 @media screen and (max-width:1000px) {
 
     nav, nav ul li {
-        flex-direction: column ;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
     }
 
 
     .grilla {
-        min-height: 100vh;
-        max-height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'area1'
-        'area2'
-        'area3'
-        'area4'
-        'area5'
-        'area6'
-        'area7'
-        'area8'
-        ;
+        display: flex;
+        flex-direction: column;
         gap: 10px;
+    }
+    .cajita {
+        height: fit-content;
+    }
+    
+    .cajita img {
+        height: auto;
     }
 
     .card_body {
