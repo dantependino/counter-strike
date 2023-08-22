@@ -119,7 +119,6 @@ h2 {
 
 .c5 {
     grid-area: area5;
-    object-fit: contain;
 }
 
 .c6 {
@@ -435,6 +434,3 @@ footer ul li {
     }
 
 }        
-
-
-
