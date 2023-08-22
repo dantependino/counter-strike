@@ -74,7 +74,7 @@ h2 {
     grid-template-rows: repeat(7,350px);
     grid-template-areas: 
     'area1 area1 area2 area2'
-    'area1 area1 area4 area4'
+    'area3 area3 area2 area2'
     'area3 area3 area4 area4'
     'area5 area5 area6 area6'
     'area5 area5 area6 area6'
@@ -119,6 +119,7 @@ h2 {
 
 .c5 {
     grid-area: area5;
+    object-fit: contain;
 }
 
 .c6 {
