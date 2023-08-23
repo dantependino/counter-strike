@@ -1,0 +1,15 @@
+//import base
+@import 'base/vars';
+@import 'base/reset';
+
+//import component
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/titulo';
+
+@import 'layout/index';
+@import 'layout/contacto';
+@import 'layout/majors';
+@import 'layout/mapas';
+@import 'layout/mediaqueris';
+@import 'layout/mejores-jugadores';

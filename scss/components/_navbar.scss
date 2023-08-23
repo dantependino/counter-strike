@@ -1,0 +1,35 @@
+header {
+    
+    background: transparent;
+    padding: 30px;
+    z-index: 2;
+    position: relative;
+
+    
+    
+
+    
+}
+nav ul{ 
+    text-align: center;
+
+    nav ul li {
+        display: inline-flex;
+    }
+
+    
+}
+
+.nav-link{
+    color: $main-color;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding: 20px;
+
+    .nav-link:hover {
+        color: $nav-hover-color;
+    }
+}
+

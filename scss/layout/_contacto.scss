@@ -1,0 +1,26 @@
+label {
+    color: $color-black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px $color-black;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
