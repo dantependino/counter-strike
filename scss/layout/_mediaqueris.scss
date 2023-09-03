@@ -31,7 +31,21 @@
 
 
 @media screen and (max-width:1000px) {
+    .desktop-nav {
+        display: none;
+    }
 
+    .mobile-nav {
+        width: fit-content;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-self: flex-end;
+    }
+
+    .drawer-color {
+    background-color: rgb(61, 79, 107);
+    }
     nav, nav ul li {
         flex-direction: column;
         text-align: center;

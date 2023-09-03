@@ -354,7 +354,7 @@ footer ul li {
 @media screen and (max-width:1000px) {
 
   .desktop-nav {
-    display: none !important;
+    display: none;
   }
 
   .mobile-nav {
