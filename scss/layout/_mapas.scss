@@ -1,24 +1,8 @@
-.carousel-control-next {
-    width: 75%;
-}
-
-.carousel-indicators {
-    width: 40%;
-    text-align: center;
-}
-
-.carousel-inner {
+.carousel-container {
     width: 70%;
-    height: 20%;
-
 }
-
-.imagen-mapa {
-    padding-inline-start: 0%;
-}
-
-.parrafo-mapa {
-    padding-top: 20px;
-    padding-bottom: 0px;
-    
+  
+.images {
+    display: flex;
+    justify-content: center;
 }

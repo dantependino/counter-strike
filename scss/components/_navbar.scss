@@ -10,6 +10,31 @@ header {
 
     
 }
+
+header {
+    background: transparent;
+    padding: 30px;
+    z-index: 2;
+    position: relative;
+}
+
+.header-title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 120px;
+  height: 40px;
+}
+
 nav ul{ 
     text-align: center;
 

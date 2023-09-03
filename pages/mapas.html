@@ -32,21 +32,67 @@
     
 </head>
 <body>
-    <header>
+  <header>
+    <div class="header-title-container">
+        <a href="../index.html">
+        <img class="logo-img" src="../assets/images/cs-logo.png"/>
+        </a>
+        <div class="title-container">
         <h1>COUNTER STRIKE</h1>
-        <nav>
-          <ul>
-                
+
+        <div class="container-fluid mobile-nav">
+            <button class="toggle-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header drawer-color">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body drawer-color">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">GALERIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mejores-jugadores.html">MEJORES JUGADORES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="majors.html">MAJORS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="mapas.html">MAPAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=spanish">DESCARGAR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <nav >
+        <ul class="desktop-nav">
             <li><a href="../index.html" class="nav-link">GALERIA</a></li>
             <li><a href="mejores-jugadores.html" class="nav-link">MEJORES JUGADORES</a></li>
             <li><a href="majors.html" class="nav-link">MAJORS</a></li>
             <li><a href="mapas.html" class="nav-link">MAPAS</a></li>
             <li><a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=spanish" class="nav-link" target="_blank">DESCARGAR</a></li>
             <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
-            
+
         </ul>
-        </nav>
-    </header>
+
+
+    </nav>
+
+
+</header>
 
     <div class="background-image">
       <div>
@@ -66,44 +112,48 @@
 
             <section class="historia">
                 <h3>MIRAGE</h3>
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="images">
+                <div class="carousel-container">
+                  <div id="carouselExampleCaptions" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="../assets/images/mirage1.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../assets/images/mirage2.avif" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../assets/images/mirage333.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../assets/images/mirage1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../assets/images/mirage2.avif" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../assets/images/mirage333.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                   </div>
+                </div>
                 
                 <p class="parrafo-mapa">Mirage es un popular mapa en Counter-Strike: Global Offensive (CS:GO) que ofrece una mezcla única de entornos urbanos y exóticos. Ubicado en Medio Oriente, presenta dos puntos de bomba (A y B) y áreas clave como "Mid" y "Underpass". Su diseño equilibrado fomenta estrategias variadas para terroristas y antiterroristas, mientras que sus múltiples rutas permiten enfrentamientos dinámicos. El mapa se destaca por su versatilidad táctica, la posibilidad de jugar a corta y larga distancia, y la necesidad de comunicación y coordinación en equipo. Mirage es una elección recurrente en competiciones de CS:GO debido a su jugabilidad atractiva y balanceada.</p>
             </section>
@@ -114,87 +164,95 @@
 
             <section class="historia">
                 <h3>DUST 2</h3>
+                <div class="images">
+                  <div class="carousel-container">
                 <div id="carouselExampleCaptions1" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../assets/images/dust1.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/dust2.avif" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/dust3.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="../assets/images/dust1.webp" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/dust2.avif" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/dust3.webp" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
+              </div>
                 
                 <p class="parrafo-mapa">Dust II es un emblemático mapa en Counter-Strike: Global Offensive (CS:GO). Con su entorno desértico, ofrece una experiencia de juego equilibrada y rápida. Presenta dos puntos de bomba, rutas estratégicas como "Mid" y "Long", y una combinación de espacios abiertos y pasillos estrechos. Este diseño permite tácticas variadas para terroristas y antiterroristas. La simetría del mapa promueve la competición justa. Dust II es apreciado por su intensa jugabilidad, destacando la puntería precisa y el trabajo en equipo. Su historia en la serie CS y su atractivo para jugadores casuales y profesionales lo convierten en un favorito duradero en la escena de esports.</p>
             </section>
 
             <section class="historia">
                 <h3>CACHE</h3>
-                <div id="carouselExampleCaptions3" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="images">
+                  <div class="carousel-container">
+                  <div id="carouselExampleCaptions3" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../assets/images/CACHE1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/CACHE2.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/CACHE3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="../assets/images/CACHE1.jpg" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/CACHE2.webp" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/CACHE3.jpg" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                      </div>
-                    </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
                 
                 <p class="parrafo-mapa">Cache es un cautivador mapa en Counter-Strike: Global Offensive (CS:GO) que ofrece una atmósfera industrial y urbana. Diseñado para una experiencia equilibrada, presenta dos puntos de bomba (A y B) y un espacio central vital conocido como "Mid". Con su diseño meticuloso y opciones tácticas diversas, Cache promueve la estrategia en equipo y la puntería precisa. Sus rutas únicas, pasajes angostos y espacios abiertos dan lugar a enfrentamientos dinámicos. A lo largo de las competiciones de CS:GO, Cache ha demostrado ser un mapa apreciado por jugadores profesionales y casuales, gracias a su diseño táctico y jugabilidad emocionante.</p>
@@ -202,43 +260,47 @@
 
             <section class="historia">
                 <h3>INFERNO</h3>
-                <div id="carouselExampleCaptions4" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="images">
+                  <div class="carousel-container">
+                    <div id="carouselExampleCaptions4" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="../assets/images/inferno1.webp" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../assets/images/inferno2.jpg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../assets/images/inferno3.jpeg" class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                   </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="../assets/images/inferno1.webp" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/inferno2.jpg" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/inferno3.jpeg" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
                 
                 <p class="parrafo-mapa">Inferno es un icónico mapa en Counter-Strike: Global Offensive (CS:GO) con una ambientación mediterránea. Con dos puntos de bomba (A y B), calles estrechas y pasillos laberínticos, Inferno requiere coordinación y estrategia. El "Mid" es una ruta crucial que conecta ambos sitios. Su diseño favorece el juego táctico, la puntería precisa y el trabajo en equipo. La arquitectura detallada crea oportunidades para tomas de control y defensas intensas. Inferno es un favorito en competencias debido a su diseño equilibrado, que permite variadas tácticas y enfrentamientos emocionantes. Su rica historia en la serie CS lo convierte en un mapa influyente en la comunidad de esports.</p>
